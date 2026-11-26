@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    color: #f8bb38;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    color: #0f172a;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Grid dos Boxes de Escolha */
+.grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 4px solid #0284c7;
+
+    /* Garante que o texto quebre a linha e não vaze do card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.box p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.box h3 {
+    color: #0284c7;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+/* Botões e Formulários */
+.btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+}
+
+.upload-box {
+    background: #e0f2fe;
+    border: 2px dashed #0284c7;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    background-color: #1e293b;
+    color: #94a3b8;
+}
+
+/* Imagens dos produtos */
+.produto-img {
+    width: 100%;
+    height: 150px;
+    /* Diminui um pouco a altura para o card ficar mais compacto */
+    object-fit: contain;
+    /* Mostra a escultura inteira sem cortar */
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-color: #f8fafc;
+    /* Fundo bem clarinho para combinar com o card branco */
+    padding: 8px;
+    /* Dá um respiro interno para a peça não colar na borda */
+}
+
+
+/* Formulário de Contato */
+.form-grupo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-grupo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
